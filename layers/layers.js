@@ -71,9 +71,23 @@ var lyr_CVN7220012026_4 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/CVN7220012026_4.png" /> CVN-72 - 20.01.2026'
             });
+var lyr_Sentinel1Image20012026_5 = new ol.layer.Image({
+        opacity: 1,
+        
+    title: 'Sentinel- 1 Image 20.01.2026<br />' ,
+        
+        
+        source: new ol.source.ImageStatic({
+            url: "./layers/Sentinel1Image20012026_5.png",
+            attributions: ' ',
+            projection: 'EPSG:3857',
+            alwaysInRange: true,
+            imageExtent: [10717101.968755, 684531.851906, 10722958.932444, 689509.744351]
+        })
+    });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_Iran_1.setVisible(true);lyr_CVN72possibleroute_2.setVisible(true);lyr_Tomahawkrange_3.setVisible(true);lyr_CVN7220012026_4.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_Iran_1,lyr_CVN72possibleroute_2,lyr_Tomahawkrange_3,lyr_CVN7220012026_4];
+lyr_OpenStreetMap_0.setVisible(true);lyr_Iran_1.setVisible(true);lyr_CVN72possibleroute_2.setVisible(true);lyr_Tomahawkrange_3.setVisible(true);lyr_CVN7220012026_4.setVisible(true);lyr_Sentinel1Image20012026_5.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_Iran_1,lyr_CVN72possibleroute_2,lyr_Tomahawkrange_3,lyr_CVN7220012026_4,lyr_Sentinel1Image20012026_5];
 lyr_Iran_1.set('fieldAliases', {'iso2': 'iso2', 'iso3': 'iso3', 'adm0_name': 'adm0_name', 'adm0_name1': 'adm0_name1', 'adm0_name2': 'adm0_name2', 'adm0_name3': 'adm0_name3', 'adm0_pcode': 'adm0_pcode', 'valid_on': 'valid_on', 'valid_to': 'valid_to', 'cod_versio': 'cod_versio', 'area_sqkm': 'area_sqkm', 'lang': 'lang', 'lang1': 'lang1', 'lang2': 'lang2', 'lang3': 'lang3', 'adm0_ref_n': 'adm0_ref_n', 'center_lat': 'center_lat', 'center_lon': 'center_lon', });
 lyr_CVN72possibleroute_2.set('fieldAliases', {'id': 'id', });
 lyr_Tomahawkrange_3.set('fieldAliases', {'Имя': 'Имя', 'X': 'X', 'Y': 'Y', });
