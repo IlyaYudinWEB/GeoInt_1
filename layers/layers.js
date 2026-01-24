@@ -56,50 +56,82 @@ var lyr_Tomahawkrange_3 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/Tomahawkrange_3.png" /> Tomahawk range'
             });
-var format_CVN7220012026_4 = new ol.format.GeoJSON();
-var features_CVN7220012026_4 = format_CVN7220012026_4.readFeatures(json_CVN7220012026_4, 
+var format_20012026CVN72AIS_4 = new ol.format.GeoJSON();
+var features_20012026CVN72AIS_4 = format_20012026CVN72AIS_4.readFeatures(json_20012026CVN72AIS_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CVN7220012026_4 = new ol.source.Vector({
+var jsonSource_20012026CVN72AIS_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_CVN7220012026_4.addFeatures(features_CVN7220012026_4);
-var lyr_CVN7220012026_4 = new ol.layer.Vector({
+jsonSource_20012026CVN72AIS_4.addFeatures(features_20012026CVN72AIS_4);
+var lyr_20012026CVN72AIS_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_CVN7220012026_4, 
-                style: style_CVN7220012026_4,
-                popuplayertitle: 'CVN-72 - 20.01.2026',
+                source:jsonSource_20012026CVN72AIS_4, 
+                style: style_20012026CVN72AIS_4,
+                popuplayertitle: ' 20.01.2026 CVN-72 AIS',
                 interactive: false,
-                title: '<img src="styles/legend/CVN7220012026_4.png" /> CVN-72 - 20.01.2026'
+                title: '<img src="styles/legend/20012026CVN72AIS_4.png" />  20.01.2026 CVN-72 AIS'
             });
-var lyr_Sentinel1Image20012026_5 = new ol.layer.Image({
+var lyr_20012026NearCVN72Radar_5 = new ol.layer.Image({
         opacity: 1,
         
-    title: 'Sentinel- 1 Image 20.01.2026<br />' ,
+    title: '20.01.2026 Near CVN-72 (Radar)<br />' ,
         
         
         source: new ol.source.ImageStatic({
-            url: "./layers/Sentinel1Image20012026_5.png",
+            url: "./layers/20012026NearCVN72Radar_5.png",
             attributions: ' ',
             projection: 'EPSG:3857',
             alwaysInRange: true,
             imageExtent: [10717101.968755, 684531.851906, 10722958.932444, 689509.744351]
         })
     });
+var lyr_23012026MilitaryShipOptical_6 = new ol.layer.Image({
+        opacity: 1,
+        
+    title: '23.01.2026 Military Ship? (Optical)<br />\
+    <img src="styles/legend/23012026MilitaryShipOptical_6_0.png" /> 1861<br />\
+    <img src="styles/legend/23012026MilitaryShipOptical_6_1.png" /> 5243<br />' ,
+        
+        
+        source: new ol.source.ImageStatic({
+            url: "./layers/23012026MilitaryShipOptical_6.png",
+            attributions: ' ',
+            projection: 'EPSG:3857',
+            alwaysInRange: true,
+            imageExtent: [8204612.074017, 1635193.459533, 8211634.725991, 1639354.500261]
+        })
+    });
+var lyr_23012026ArmadaofshipsOptical_7 = new ol.layer.Image({
+        opacity: 1,
+        
+    title: '23.01.2026 Armada of ships (Optical)<br />\
+    <img src="styles/legend/23012026ArmadaofshipsOptical_7_0.png" /> 2025<br />\
+    <img src="styles/legend/23012026ArmadaofshipsOptical_7_1.png" /> 3814<br />' ,
+        
+        
+        source: new ol.source.ImageStatic({
+            url: "./layers/23012026ArmadaofshipsOptical_7.png",
+            attributions: ' ',
+            projection: 'EPSG:3857',
+            alwaysInRange: true,
+            imageExtent: [8205013.368416, 1655086.196145, 8212036.020389, 1659247.236872]
+        })
+    });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_Iran_1.setVisible(true);lyr_CVN72possibleroute_2.setVisible(true);lyr_Tomahawkrange_3.setVisible(true);lyr_CVN7220012026_4.setVisible(true);lyr_Sentinel1Image20012026_5.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_Iran_1,lyr_CVN72possibleroute_2,lyr_Tomahawkrange_3,lyr_CVN7220012026_4,lyr_Sentinel1Image20012026_5];
+lyr_OpenStreetMap_0.setVisible(true);lyr_Iran_1.setVisible(true);lyr_CVN72possibleroute_2.setVisible(true);lyr_Tomahawkrange_3.setVisible(true);lyr_20012026CVN72AIS_4.setVisible(true);lyr_20012026NearCVN72Radar_5.setVisible(true);lyr_23012026MilitaryShipOptical_6.setVisible(true);lyr_23012026ArmadaofshipsOptical_7.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_Iran_1,lyr_CVN72possibleroute_2,lyr_Tomahawkrange_3,lyr_20012026CVN72AIS_4,lyr_20012026NearCVN72Radar_5,lyr_23012026MilitaryShipOptical_6,lyr_23012026ArmadaofshipsOptical_7];
 lyr_Iran_1.set('fieldAliases', {'iso2': 'iso2', 'iso3': 'iso3', 'adm0_name': 'adm0_name', 'adm0_name1': 'adm0_name1', 'adm0_name2': 'adm0_name2', 'adm0_name3': 'adm0_name3', 'adm0_pcode': 'adm0_pcode', 'valid_on': 'valid_on', 'valid_to': 'valid_to', 'cod_versio': 'cod_versio', 'area_sqkm': 'area_sqkm', 'lang': 'lang', 'lang1': 'lang1', 'lang2': 'lang2', 'lang3': 'lang3', 'adm0_ref_n': 'adm0_ref_n', 'center_lat': 'center_lat', 'center_lon': 'center_lon', });
 lyr_CVN72possibleroute_2.set('fieldAliases', {'id': 'id', });
 lyr_Tomahawkrange_3.set('fieldAliases', {'Имя': 'Имя', 'X': 'X', 'Y': 'Y', });
-lyr_CVN7220012026_4.set('fieldAliases', {'id': 'id', });
+lyr_20012026CVN72AIS_4.set('fieldAliases', {'id': 'id', });
 lyr_Iran_1.set('fieldImages', {'iso2': 'TextEdit', 'iso3': 'TextEdit', 'adm0_name': 'TextEdit', 'adm0_name1': 'TextEdit', 'adm0_name2': 'TextEdit', 'adm0_name3': 'TextEdit', 'adm0_pcode': 'TextEdit', 'valid_on': 'DateTime', 'valid_to': 'DateTime', 'cod_versio': 'TextEdit', 'area_sqkm': 'TextEdit', 'lang': 'TextEdit', 'lang1': 'TextEdit', 'lang2': 'TextEdit', 'lang3': 'TextEdit', 'adm0_ref_n': 'TextEdit', 'center_lat': 'TextEdit', 'center_lon': 'TextEdit', });
 lyr_CVN72possibleroute_2.set('fieldImages', {'id': 'TextEdit', });
 lyr_Tomahawkrange_3.set('fieldImages', {'Имя': 'TextEdit', 'X': 'TextEdit', 'Y': 'TextEdit', });
-lyr_CVN7220012026_4.set('fieldImages', {'id': 'TextEdit', });
+lyr_20012026CVN72AIS_4.set('fieldImages', {'id': 'TextEdit', });
 lyr_Iran_1.set('fieldLabels', {'iso2': 'no label', 'iso3': 'no label', 'adm0_name': 'no label', 'adm0_name1': 'no label', 'adm0_name2': 'no label', 'adm0_name3': 'no label', 'adm0_pcode': 'no label', 'valid_on': 'no label', 'valid_to': 'no label', 'cod_versio': 'no label', 'area_sqkm': 'no label', 'lang': 'no label', 'lang1': 'no label', 'lang2': 'no label', 'lang3': 'no label', 'adm0_ref_n': 'no label', 'center_lat': 'no label', 'center_lon': 'no label', });
 lyr_CVN72possibleroute_2.set('fieldLabels', {'id': 'no label', });
 lyr_Tomahawkrange_3.set('fieldLabels', {'Имя': 'no label', 'X': 'no label', 'Y': 'no label', });
-lyr_CVN7220012026_4.set('fieldLabels', {'id': 'no label', });
-lyr_CVN7220012026_4.on('precompose', function(evt) {
+lyr_20012026CVN72AIS_4.set('fieldLabels', {'id': 'no label', });
+lyr_20012026CVN72AIS_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

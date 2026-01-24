@@ -1,8 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-    var fill_Iran_1 = new ol.style.Fill();
-var style_Iran_1 = function(feature, resolution){
+var style_20012026CVN72AIS_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -22,8 +21,8 @@ var style_Iran_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        
-        fill: fill_Iran_1,
+        image: new ol.style.RegularShape({radius: 8.0 + size, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(128,17,25,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(219,30,42,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -31,5 +30,3 @@ var style_Iran_1 = function(feature, resolution){
 
     return style;
 };
-
-    fill_Iran_1.setColor(stripe(1.0, 5.0, 315.0, '#d7191c'));

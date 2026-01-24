@@ -1,0 +1,1 @@
+var json_20012026CVN72AIS_4 = {"type":"FeatureCollection","name":"20012026CVN72AIS_4","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1"},"geometry":{"type":"Point","coordinates":[95.75989,6.28058]}}]}
